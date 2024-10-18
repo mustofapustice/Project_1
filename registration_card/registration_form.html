@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #6775dd, #7452aa);
+            font-family: Google Sans, Roboto, RobotoDraft, Helvetica Neue, sans-serif;
+            color: black;
+            font-weight: 400;
+            font-size: 24px;
+            height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .form_class {
+            width: 1300px;
+            border-radius: 25px;
+        }
+
+       .column_1> label {
+            float: left;
+            width: 200px;
+            margin: 35px 0px 0px 20px;
+            font-weight: bold;
+        }
+        .column_2> label {
+            float: left;
+            width: 250px;
+            margin: 35px 0px 0px 20px;
+            font-weight: bold;
+        }   
+
+        .text_center {
+            text-align: center;
+        }
+
+        input {
+            padding: 18px;
+            margin: 20px 5px 5px 0px;
+            border-radius: 5px;
+            width: 280px;
+        }
+
+        .column_class {
+            display: flex;
+        }
+
+        .column_1 {
+            margin-left: 20px;
+        }
+
+        .column_2 {
+            margin-left: 50px;
+        }
+        label {
+            margin: 0;
+            padding: 0;
+        }
+        .gender_class {
+            margin-left: 40px
+        }
+        .gender_class>input {
+            margin:25px -10px 20px 20px;
+            width: 40px;
+            height: 20px;
+        
+        }
+        .button_class {
+            margin: 30px 0px 30px 40px;
+        }
+        .button_class>button {
+            padding: 15px;
+            font-size:28px;
+            font-weight:600;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="form_class">
+        <form action="hello.php" style="background-color: white; padding: 10px; border-radius: 15px;">
+            <h2 class="text_center">Registration</h2>
+            <div class="column_class">
+                <div class="column_1">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" /><br />
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" placeholder="Enter Your email" /><br />
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Your password" /><br />
+                </div>
+
+                <div class="column_2">
+                    <label for="name">Username</label>
+                    <input type="text" id="name" placeholder="Enter Your Username" /><br />
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" id="phone_number" placeholder="Enter Your Phone Number" /><br />
+                    <label for="c_password">Confirm Password</label>
+                    <input type="password" id="c_password" placeholder="Confirm Your password" /><br />
+                </div>
+            </div>
+
+            <div class="gender_class">
+            <label for="gender" style="font-weight: bold; font-size:24px;margin-right: 70px;">Gender</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label><br>
+            </div>
+
+            <div class="button_class">
+                <button style="color: white; background-color: rgb(255, 94, 95);border: 0px solid rgb(255, 94, 95);">Cancel</button>
+                <button style="color: white; background-image: linear-gradient(to right, #6775dd, #7452aa);border-color: #6775dd;">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
